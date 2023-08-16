@@ -201,7 +201,7 @@ nav > p {
   margin: 0;
 }
 
-.aside-div {
+aside > div {
   background-color: #ccd0c7;
   width: 90%;
   height: 96px;
