@@ -33,9 +33,7 @@ h1 {
 
 header img {
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
 }
 
 nav a {
@@ -58,9 +56,7 @@ main {
   margin-right: auto;
   margin-bottom: 20px;
   box-shadow: 5px 10px 18px #888888;
-  padding-left: 29px;
-  padding-right: 29px;
-  padding-bottom: 20px;
+  padding: 0 29px 20px 29px;
 }
 
 h2 {
@@ -90,12 +86,18 @@ p {
 
 ul,
 ol {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0;
   line-height: 190%;
   list-style-position: inside;
   padding-left: 12px;
 }
+
+ul > li > span {
+  background-color: #ddddde;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
 strong {
   color: #aa2072;
   font-weight: 500;
@@ -149,8 +151,8 @@ p > a {
 
 iframe {
   border-radius: 36px;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  width: 287px;
+  margin: 25px auto;
 }
 
 h4 {
@@ -158,8 +160,7 @@ h4 {
   font-size: x-large;
   color: black;
   font-weight: 500;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding: 20px 0 15px 0;
 }
 
 h4 + p {
@@ -176,7 +177,6 @@ input[type="email" i] {
   border-bottom: 1px dashed gray;
   height: 28px;
   font-family: "Poppins", sans-serif;
-  padding: 4px;
   text-indent: 4px;
   font-size: 0.8rem;
 }
@@ -187,27 +187,15 @@ button {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   border-style: hidden;
+  height: 25px;
 }
 
 /*ASIDE*/
 
-li > span {
-  background-color: #ddddde;
-  border-radius: 4px;
-  border: 1px solid gray;
-}
-
-nav > p {
-  margin: 0;
-}
-
 aside > div {
   background-color: #ccd0c7;
-  margin: auto;
-  margin-bottom: 40px;
-  margin-top: 15px;
-  padding-top: 25px;
-  padding-left: 20px;
+  margin: 15px auto 40px auto;
+  padding: 25px 0 0 20px;
 }
 
 aside > div:last-child {
@@ -243,7 +231,6 @@ footer h4 {
 
 footer p {
   padding-left: 10px;
-  padding-right: 20px;
   color: white;
   text-align: center;
   font-size: 0.9rem;
